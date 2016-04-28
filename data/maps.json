@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Property Sales",
+    "url": "https://wprdc.cartodb.com/api/v2/viz/24397410-dccd-11e5-82a8-0ea31932ec1d/viz.json",
+    "zoom": 17
+  },
+  {
+    "name": "Crashes in 2014",
+    "url": "https://wprdc.cartodb.com/api/v2/viz/ff176136-00eb-11e6-8e2f-0e3ff518bd15/viz.json",
+    "zoom": 17
+  },
+  {
+   "name": "County Parks",
+    "url": "https://wprdc.cartodb.com/api/v2/viz/6edeb484-fa83-11e5-bc1d-0e31c9be1b51/viz.json",
+    "zoom": 15
+  },
+  {
+    "name": "Pittsburgh Neighborhoods",
+    "url": "https://wprdc.cartodb.com/api/v2/viz/139ce56c-defb-11e5-b99e-0e674067d321/viz.json"
+  }
+]

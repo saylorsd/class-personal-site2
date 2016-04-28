@@ -1,0 +1,92 @@
+.header {
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.top-bar {
+  z-index: 1000;
+  .top-bar-title {
+    display: none;
+  }
+  padding: 2rem;
+  transition: padding .25s ease;
+  background-color: $black;
+  color: map-get($foundation-palette, secondary);
+}
+
+.top-bar-right {
+  a {
+    font-weight: 500;
+    background-color: $black;
+  }
+}
+
+.is-stuck .top-bar {
+  .top-bar-title {
+    display: inline;
+  }
+  padding: .25rem;
+  transition: padding .25s ease;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.content-container {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  .center {
+    text-align: center;
+  }
+  .row {
+    padding-top: 5px;
+  }
+}
+
+.content-container.secondary {
+  background-color: #2A313D;
+  h1 {
+    color: #2C9AE9;
+  }
+  h2, h3, h4, h5, h6, p {
+    color: $white;
+  }
+}
+
+.section-title {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+
+}
+
+#map, #pie {
+  height: 300px;
+  max-height: 300px;
+}
+
+.cartodb-zoom, .cartodb-searchbox, .cartodb-share {
+  z-index: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.strip {
+  margin-top: 1rem;
+}
+
+#footer {
+  background-color: #2A313D;
+}
