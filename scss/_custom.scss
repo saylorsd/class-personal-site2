@@ -62,6 +62,9 @@ img.center {
   background-color: #8296A1;
   border-bottom: 3px solid #4d4d4d;
   border-top: 3px solid #4d4d4d;
+  a {
+    color: darken(#1585cf, 20);
+  }
 }
 
 .section-title {
