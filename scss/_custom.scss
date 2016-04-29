@@ -1,16 +1,20 @@
-.header {
-}
-
 [data-sticky] {
   width: 100%;
 }
 
+// To hide map buttons during scroll
+.sticky-container {
+  z-index: 60;
+}
+
 .top-bar {
-  z-index: 1000;
   .top-bar-title {
     display: none;
   }
-  padding: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   transition: padding .25s ease;
   background-color: $black;
   color: map-get($foundation-palette, secondary);
@@ -30,6 +34,8 @@
   padding: .25rem;
   transition: padding .25s ease;
 }
+
+
 
 img.center {
   display: block;
@@ -53,13 +59,9 @@ img.center {
 }
 
 .content-container.secondary {
-  background-color: #2A313D;
-  h1 {
-    color: #2C9AE9;
-  }
-  h2, h3, h4, h5, h6, p {
-    color: $white;
-  }
+  background-color: #8296A1;
+  border-bottom: 3px solid #4d4d4d;
+  border-top: 3px solid #4d4d4d;
 }
 
 .section-title {
@@ -75,8 +77,8 @@ img.center {
   max-height: 300px;
 }
 
-.cartodb-zoom, .cartodb-searchbox, .cartodb-share {
-  z-index: 1;
+.cartodb-map-wrapper {
+  z-index: 30 !important;
 }
 
 .right {
@@ -87,6 +89,24 @@ img.center {
   margin-top: 1rem;
 }
 
+
 #footer {
-  background-color: #2A313D;
+  background-color: #8296A1;
+  padding-top: 1rem;
+
+  p {
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
+}
+
+.foot-note {
+  font-style: italic;
+  font-size: 80%;
+  margin: .1rem;
+}
+
+#map-name {
+  color: dimgray;
 }

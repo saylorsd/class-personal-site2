@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Steven Saylor</title>
 
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Roboto' rel='stylesheet' type='text/css'>
@@ -15,12 +13,13 @@
     <!-- Map Stuff -->
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+
+
 <!-- Header -->
-
-
-<!-- Menu -->
 <header id="header" class="header">
     <div class="row">
         <div class="small-12 medium-6 large-6 columns" id="header-left">
@@ -74,9 +73,8 @@
                 <h1 class="section-title">My Work</h1>
                 <h4 class="center">Reasearch Programmer at the <b>University of Pittsburgh's Center for Social and
                     Ubran Research.</b></h4>
-                <p>My work at UCSUR is spread across various civic data projects, as well as providing programming
+                <p class="center">My work at UCSUR is spread across various civic data projects, as well as providing programming
                     support to faculty and researchers.</p>
-                <p>You can take a look at each of thos projects below:</p>
             </div>
         </div>
     </div>
@@ -117,11 +115,11 @@
                     look at local neighborhoods and communities in a comprehensive data fashion. SWPA Community Profiles
                     presents community data and indicators in a series of interactive tables and maps.</p>
                 <ul class="inner-list">
-                    <li><h6><b>Role: </b>Developer</h6></li>
-                    <li><h6><b>Tasks:</b></h6></li>
+                    <li><b>Role: </b>Developer</li>
+                    <li><b>Tasks:</b></li>
                     <ul>
-                        <li><h6>Maintain front-end website.</h6></li>
-                        <li><h6>Currently developing new site/back-end system.</h6></li>
+                        <li>Maintain front-end website.</li>
+                        <li>Currently developing new site/back-end system.</li>
                     </ul>
                 </ul>
             </div>
@@ -135,20 +133,20 @@
                     region to other areas of the country lets us see how we measure up, and what our strengths and
                     weaknesses are. It also gives us a way to measure progress as we move forward as a region.</p>
                 <ul class="inner-list">
-                    <li><h6><b>Role: </b>Developer</h6></li>
-                    <li><h6><b>Tasks:</b></h6></li>
+                    <li><b>Role: </b>Developer</li>
+                    <li><b>Tasks:</b></h6></li>
                     <ul>
-                        <li><h6>Designed responsive version of site (going live soon) <a target="_blank"
-                                                                                         href="http://www.pghtoday.org">
-                            *Preview*</a></h6></li>
-                        <li><h6>Maintain front-end website.</h6></li>
-                        <li><h6>Develop ETL and Data Viz processes for regional indicators.</h6></li>
+                        <li>Designed new responsive version of site</li>
+                        <li>Maintain front-end website.</li>
+                        <li>Develop ETL and Data Viz processes for regional indicators.</li>
                     </ul>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Projects -->
 <div id="projects" class="content-container primary">
     <div class="row">
         <div class="large-12 columns">
@@ -169,7 +167,7 @@
                 one
                 from the bunch that I've made.
             </p>
-            <h4>Current Map: <span id="map-name"></span></h4>
+            <h5><b>Current Map:</b> <span id="map-name"></span></h5>
         </div>
         <div class="small-6 medium-8 columns">
             <div id="map"></div>
@@ -182,10 +180,32 @@
         <div class="small-6 medium-6 columns right">
             <h2>Property Information Downloader</h2>
             <p>This <a href="http://wprdc.github.io/property-information-extractor/">tool</a>, forked and modified by me
-                from, Chris Whong's <a href="http://chriswhong.github.io/plutoplus/">PlutoPlus data downloader</a>,
+                from Chris Whong's <a href="http://chriswhong.github.io/plutoplus/">PlutoPlus data downloader for NYC</a>,
                 provides a easy way for community groups or citizens to download relevant property data based on
                 geographical locations.
             </p>
+        </div>
+    </div>
+    <div class="row strip">
+        <div class="small-6 medium-7 columns">
+            <h2>API Stuff</h2>
+            <p>Search a dog name to see how many dogs are licensed* under that name in Allegheny County*.</p>
+            <p>This uses the Restful API at WPRDC to query the County's <a
+                    href="https://data.wprdc.org/dataset/allegheny-county-dog-licenses">dog licence dataset</a> and
+                return the count of results.</p>
+            <p class="foot-note">* Lifetime licences only.</p>
+            <p class="foot-note">** Pittsburgh licences are kept seperate and havent been provided yet.</p>
+        </div>
+        <div class="small-6 medium-5 columns">
+            <br><br>
+            <div class="input-group">
+                <span class="input-group-label">Dog Name</span>
+                <input id="dog-search" class=" input-group-field" type="text">
+                <div class="input-group-button">
+                    <input id="dog-submit" type="submit" class="button" value="Submit">
+                </div>
+            </div>
+            <div id="dog-results"></div>
         </div>
     </div>
 </div>
@@ -196,15 +216,14 @@
         <div class="small-12 columns">
             <div class="content-wrapper">
                 <h1 class="section-title">My CV</h1>
-
-                <div class="row" id="languages">
-                </div>
+                <h5 class="center">Coming soon...</h5>
             </div>
         </div>
     </div>
 </div>
+
 <!--Testimonials -->
-<div id="testimonials"class="content-container secondary">
+<div id="testimonials" class="content-container secondary">
     <div class="row">
         <div class="small-12 columns">
             <div class="content-wrapper">
@@ -246,6 +265,7 @@
                 <h5 class="center">Leave your contact information and a message for me below, and I'll get back to
                     you as soon as
                     possible.</h5>
+                <div id="contact-msg" class="center"></div>
                 <form id="contact-form" method="get">
                     <div class="row">
                         <div class="small-12 medium-6 columns">
@@ -281,59 +301,29 @@
             </div>
         </div>
     </div>
+
 </div>
 <div id="footer">
     <div class="row">
-
     </div>
     <div class="row">
-        <p style="margin:0; color:white;">    &copy; 2016 Steve Saylor Productions</p>
+        <p>    &copy; 2016 Steve Saylor Productions</p>
     </div>
 </div>
 
 <div class='column row' id="content">
 </div>
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
+<!--  Might be better to use these for local Development -->
+<!--
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/what-input/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+-->
+
+<script src="js/dist/jquery.min.js"></script>
+<script src="js/dist/what-input.min.js"></script>
+<script src="js/dist/foundation.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-    $(document).foundation();
-
-    $('.top-bar').on('sticky.zf.stuckto:top', function () {
-        $(this).addClass('shrink');
-    }).on('sticky.zf.unstuckfrom:top', function () {
-        $(this).removeClass('shrink');
-    })
-</script>
-
-<script>
-    // This script selects two random maps from a json file of my maps
-    // and uses cartodb.js to add it them to the dom
-    $.getJSON("data/maps.json", function (data) {
-        var i = Math.floor((Math.random() * data.length));
-        cartodb.createVis('map', data[i].url);
-        $('#map-name').text(data[i].name);
-    });
-    $('#api-button').on("click", function(){
-        var dogName = $('#dog-name').val();
-        var statement = "SELECT * FROM \"f8ab32f7-44c7-43ca-98bf-c1b444724598\" WHERE \"DogName\" LIKE '" + dogName + "'";
-
-        var url = "https://data.wprdc.org/api/action/datastore_search_sql?sql=" + statement;
-        $.get(url, function(data){
-            alert("There are " + data.results.length + " licensed dogs in Allegheny County with that name!");
-        })
-    });
-    $('#contact-form').on("submit", function(data){
-        console.log(data);
-    })
-
-
-    $(window).on("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - 50);
-    });
-</script>
-
 </body>
 </html>
