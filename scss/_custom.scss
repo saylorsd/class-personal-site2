@@ -24,6 +24,8 @@
   a {
     font-weight: 500;
     background-color: $black;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -34,8 +36,6 @@
   padding: .25rem;
   transition: padding .25s ease;
 }
-
-
 
 img.center {
   display: block;
@@ -92,7 +92,6 @@ img.center {
   margin-top: 1rem;
 }
 
-
 #footer {
   background-color: #8296A1;
   padding-top: 1rem;
@@ -112,4 +111,46 @@ img.center {
 
 #map-name {
   color: dimgray;
+}
+
+#cv {
+
+  .cv-title, .cv-section {
+    display: inline-block;
+    font-family: $header-font-family;
+    width: 100%;
+  }
+  .cv-section {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: dimgray;
+
+  }
+  .cv-title {
+    padding-left: 1rem;
+
+  }
+  h6 {
+    padding-left: 2rem;
+    font-style: italic;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .cv-desc {
+    padding-left: 4rem;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+  }
+  li {
+    font-size: .8rem;
+  }
+  p {
+    font-size: .8rem;
+  }
 }

@@ -4197,7 +4197,9 @@ table.hover tr:nth-of-type(even):hover {
 
 .top-bar-right a {
   font-weight: 500;
-  background-color: #0a0a0a; }
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 0; }
 
 .is-stuck .top-bar {
   padding: .25rem;
@@ -4262,3 +4264,39 @@ img.center {
 
 #map-name {
   color: dimgray; }
+
+#cv .cv-title, #cv .cv-section {
+  display: inline-block;
+  font-family: "Ubuntu Condensed", sans-serif;
+  width: 100%; }
+
+#cv .cv-section {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: dimgray; }
+
+#cv .cv-title {
+  padding-left: 1rem; }
+
+#cv h6 {
+  padding-left: 2rem;
+  font-style: italic; }
+
+#cv .left {
+  float: left; }
+
+#cv .right {
+  float: right; }
+
+#cv .cv-desc {
+  padding-left: 4rem; }
+
+#cv ul {
+  display: inline-block;
+  list-style: none; }
+
+#cv li {
+  font-size: .8rem; }
+
+#cv p {
+  font-size: .8rem; }
