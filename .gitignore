@@ -1,5 +1,5 @@
 .DS_Store
-bower_components
+project-part-2/bower_components
 node_modules
 npm-debug.log
 css
